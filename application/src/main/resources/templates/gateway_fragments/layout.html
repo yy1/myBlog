@@ -10,7 +10,6 @@
         />
         <meta content="noindex,nofollow" name="robots" />
         <title th:text="${title}"></title>
-        <link rel="preload" href="/images/wordmark.svg" as="image" type="image/svg+xml" />
         <link rel="preload" href="/images/logo.png" as="image" type="image/png" />
         <link th:unless="${#strings.isEmpty(site.favicon)}" rel="icon" th:href="${site.favicon}" />
 

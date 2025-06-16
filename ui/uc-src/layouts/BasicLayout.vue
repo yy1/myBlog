@@ -11,7 +11,6 @@ import {
 import { defineStore } from "pinia";
 import { onMounted, reactive, ref } from "vue";
 import { RouterView, useRoute } from "vue-router";
-import IconLogo from "~icons/core/logo?width=5rem&height=2rem";
 
 const route = useRoute();
 
@@ -64,7 +63,7 @@ onMounted(() => {
           target="_blank"
           :title="$t('core.sidebar.operations.visit_homepage.title')"
         >
-          <IconLogo class="sidebar__logo" />
+          <span class="sidebar__logo text-xl font-medium">AI知识小站</span>
         </a>
       </div>
       <div ref="navbarScroller" class="sidebar__content">
@@ -81,11 +80,11 @@ onMounted(() => {
       <footer v-if="!route.meta.hideFooter" class="main-content__footer">
         <span class="main-content__footer-text">Powered by </span>
         <a
-          href="https://www.halo.run"
+          href="/"
           target="_blank"
           class="main-content__footer-link"
         >
-          Halo
+          AI知识小站
         </a>
       </footer>
     </main>

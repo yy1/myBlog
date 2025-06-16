@@ -88,19 +88,21 @@
 
 <div th:remove="tag" th:fragment="haloLogo">
     <style>
-        .halo-logo {
+        .site-logo {
             width: 100%;
             display: flex;
             justify-content: center;
             margin-bottom: 2em;
         }
 
-        .halo-logo img {
-            width: 6em;
+        .site-logo .site-title {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
         }
     </style>
-    <div class="halo-logo">
-        <img src="/images/wordmark.svg" alt="Halo" />
+    <div class="site-logo">
+        <span class="site-title">AI知识小站</span>
     </div>
 </div>
 

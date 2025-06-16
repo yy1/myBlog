@@ -32,7 +32,7 @@ export const sharedPlugins = [
     compiler: "vue3",
     customCollections: {
       core: {
-        logo: () => fs.readFileSync("./src/assets/logo.svg", "utf-8"),
+        logo: () => "AI知识小站",
       },
     },
   }),
