@@ -11,6 +11,7 @@ import {
 import { defineStore } from "pinia";
 import { onMounted, reactive, ref } from "vue";
 import { RouterView, useRoute } from "vue-router";
+import { RouterLink } from "vue-router";
 
 const route = useRoute();
 
@@ -63,7 +64,11 @@ onMounted(() => {
           target="_blank"
           :title="$t('core.sidebar.operations.visit_homepage.title')"
         >
-          <span class="sidebar__logo text-xl font-medium">AI知识小站</span>
+          <div class="sidebar-logo">
+            <RouterLink to="/overview" class="sidebar-logo__link">
+              <span class="sidebar-logo__text">硅基诗篇</span>
+            </RouterLink>
+          </div>
         </a>
       </div>
       <div ref="navbarScroller" class="sidebar__content">
@@ -79,13 +84,9 @@ onMounted(() => {
       <RouterView v-else />
       <footer v-if="!route.meta.hideFooter" class="main-content__footer">
         <span class="main-content__footer-text">Powered by </span>
-        <a
-          href="/"
-          target="_blank"
-          class="main-content__footer-link"
-        >
-          AI知识小站
-        </a>
+        <RouterLink to="/overview" class="main-content__footer-link">
+          硅基诗篇
+        </RouterLink>
       </footer>
     </main>
     <MobileMenu :menus="menus" :minimenus="minimenus" platform="uc" />

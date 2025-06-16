@@ -77,7 +77,7 @@ onMounted(() => {
           target="_blank"
           :title="$t('core.sidebar.operations.visit_homepage.title')"
         >
-          <span class="sidebar__logo text-xl font-medium">AI知识小站</span>
+          <span class="sidebar__logo text-xl font-medium">硅基诗篇</span>
         </a>
       </div>
       <div ref="navbarScroller" class="sidebar__content">
@@ -107,7 +107,7 @@ onMounted(() => {
       <footer v-if="!route.meta.hideFooter" class="main-content__footer">
         <span class="main-content__footer-text">Powered by </span>
         <RouterLink to="/overview" class="main-content__footer-link">
-          AI知识小站
+          硅基诗篇
         </RouterLink>
       </footer>
     </main>
