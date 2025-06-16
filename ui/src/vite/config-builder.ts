@@ -1,6 +1,6 @@
+import legacy from "@vitejs/plugin-legacy";
 import Vue from "@vitejs/plugin-vue";
 import VueJsx from "@vitejs/plugin-vue-jsx";
-import fs from "fs";
 import path from "path";
 import GzipPlugin from "rollup-plugin-gzip";
 import Icons from "unplugin-icons/vite";
@@ -8,8 +8,6 @@ import { fileURLToPath } from "url";
 import { defineConfig, type Plugin } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 import { setupLibraryExternal } from "./library-external";
-
-import legacy from "@vitejs/plugin-legacy";
 
 interface Options {
   base: string;

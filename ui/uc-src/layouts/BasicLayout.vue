@@ -10,8 +10,7 @@ import {
 } from "overlayscrollbars-vue";
 import { defineStore } from "pinia";
 import { onMounted, reactive, ref } from "vue";
-import { RouterView, useRoute } from "vue-router";
-import { RouterLink } from "vue-router";
+import { RouterLink, RouterView, useRoute } from "vue-router";
 
 const route = useRoute();
 
